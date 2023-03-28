@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+header {
+    height: 48px;
+}
+header img  {
+    width: 100%;
+}
+/* nav */
+nav {
+    background-color:#288ad6;
+}
+nav ul {
+    display: flex ;
+    justify-content: space-between; /* Khoảng cách trái phải items*/
+    align-items: center; /* căn giữa trên dưới các items  */
+}
+nav ul li,a {
+    color: white;
+}
+.search input {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 6px ; /* Khoảng cách từ viền vào*/
+    outline: none; /* Làm viền của thẻ input kh hiện lên khi nhấp vào*/
+    text-align: left;
+}
+.button button {
+    height: 30px;
+    padding: 0px 12px; /*Làm dầy khoảng cách từ viền nút tới chữ */
+    cursor: pointer; /* Gơ chuột vào hiện hình bàn tay*/
+    background-color: #288ad6;
+    border: 0.5px solid #c0b7b7;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.3s ease; /* Thay đổi tốc độ khi chuyển đổi */
+}
+.button button i {
+    margin-right: 6px; /* Khoảng cách từ icon giỏ hàng tới chữ "Giỏ hàng" */
+}
+.button button:hover {
+    background-color:#b6d5eb
+}
+.BT a:hover,
+.BTT a:hover {
+    color: black;
+    transition: all 0.3s ease;
+}
+/* MENU*/
+.menu-bar {
+    background-color: #288ad6;
+    padding: 12px 0;
+    font-size: 14px;
+    
+}
+.menu-bar ul {
+    display: flex;
+    justify-content: space-between;
+}
+.menu-bar-main li {
+    list-style: none;
+}
+.menu-bar a:hover {
+    color: black;
+    transition: all 0.3s ease;
+}
+.menu-bar .bars i {
+    padding: 0 6px;
+}
+/* Address Form */
+.address-form { 
+    position: fixed;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    display: none;
+}
+.address-form-contain{
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    border-radius: 5px;
+}
+.address-form-contain form {
+    padding: 0 40px;
+    
+}
+.address-form-contain h2 {
+    font-size: 14px;
+    padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+.address-form-contain h2 i {
+    position: absolute;
+    display: block;
+    border: 1px solid #ddd;
+    height: 30px;
+    padding: 0 6px;
+    right: 0;
+    top: 0;
+    line-height: 30px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #5e5e5e;
+    border-radius: 3px;
+}
+.address-form-contain form input,select{
+    height: 40px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+.address-form-contain form p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+.address-form-contain form button {
+    margin-top: 20px;
+    height: 40px;
+    width: 80%;
+    cursor: pointer;
+    background-color: rgb(109, 189, 216);
+    border-radius: 5px;
+}
+.address-form-contain form button:hover {
+    background-color: lightblue;
+}
